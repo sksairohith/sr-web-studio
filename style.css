@@ -195,3 +195,20 @@ border-radius:10px;
 .whatsapp-btn:hover{
     transform:scale(1.1);
 }
+.dark{
+    background:#121212;
+    color:white;
+}
+
+.dark .card{
+    background:#1e1e1e;
+    color:white;
+}
+
+.dark header{
+    background:#000;
+}
+
+.dark footer{
+    background:#000;
+}
