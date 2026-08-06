@@ -223,3 +223,44 @@ border-radius:10px;
 .logo h1{
     font-size:30px;
 }
+.hero{
+    min-height:90vh;
+    background:linear-gradient(135deg,#0A2540,#0d6efd);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:40px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.7;
+    margin-bottom:30px;
+}
+
+.hero-button{
+    display:inline-block;
+    padding:15px 35px;
+    background:white;
+    color:#0A2540;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.hero-button:hover{
+    background:#FFD700;
+}
