@@ -586,3 +586,18 @@ button{
 button:hover{
     transform:scale(1.05);
 }
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+}
+
+.logo h1{
+    margin:0;
+    color:#0A2540;
+}
