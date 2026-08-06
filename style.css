@@ -479,3 +479,48 @@ border-radius:10px;
     border-radius:8px;
     cursor:pointer;
 }
+.contact-section{
+    padding:80px 20px;
+    background:#ffffff;
+}
+
+.contact-section h2{
+    text-align:center;
+    font-size:40px;
+    color:#0A2540;
+    margin-bottom:40px;
+}
+
+.contact-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.contact-info,
+.contact-form{
+    width:450px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+.contact-form button{
+    background:#0A2540;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background:#1565c0;
+}
