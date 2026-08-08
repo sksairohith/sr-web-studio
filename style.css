@@ -667,3 +667,16 @@ nav a:hover{
     background: #1565c0;
     transform: translateY(-3px);
 }
+#darkModeBtn {
+    border: none;
+    background: transparent;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#darkModeBtn:hover {
+    background: #eeeeee;
+}
