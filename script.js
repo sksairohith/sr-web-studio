@@ -50,3 +50,27 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 
 revealOnScroll();
+// Animated counters
+const counters = document.querySelectorAll(".counter");
+
+counters.forEach(function(counter) {
+    const target = Number(counter.getAttribute("data-target"));
+    let current = 0;
+
+    const updateCounter = function() {
+        const increment = Math.max(1, Math.ceil(target / 50));
+
+        if (current < target) {
+            current += increment;
+
+            if (current > target) {
+                current = target;
+            }
+
+            counter.textContent = current;
+            setTimeout(updateCounter, 30);
+        }
+    };
+
+    updateCounter();
+});
