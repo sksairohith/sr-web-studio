@@ -92,3 +92,37 @@ const counterObserver = new IntersectionObserver(function(entries) {
 counters.forEach(function(counter) {
     counterObserver.observe(counter);
 });
+// Portfolio image slider
+
+const portfolioImages = [
+    "https://via.placeholder.com/600x350?text=Website+Project+1",
+    "https://via.placeholder.com/600x350?text=Website+Project+2",
+    "https://via.placeholder.com/600x350?text=Website+Project+3"
+];
+
+let currentImage = 0;
+
+function showImage() {
+    document.getElementById("sliderImage").src =
+        portfolioImages[currentImage];
+}
+
+function nextImage() {
+    currentImage++;
+
+    if (currentImage >= portfolioImages.length) {
+        currentImage = 0;
+    }
+
+    showImage();
+}
+
+function previousImage() {
+    currentImage--;
+
+    if (currentImage < 0) {
+        currentImage = portfolioImages.length - 1;
+    }
+
+    showImage();
+}
