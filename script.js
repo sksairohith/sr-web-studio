@@ -126,3 +126,36 @@ function previousImage() {
 
     showImage();
 }
+// Contact form validation
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+    contactForm.addEventListener("submit", function(event) {
+
+        event.preventDefault();
+
+        const name = contactForm.querySelector('input[type="text"]').value.trim();
+        const email = contactForm.querySelector('input[type="email"]').value.trim();
+        const message = contactForm.querySelector("textarea").value.trim();
+
+        if (name === "") {
+            alert("Please enter your name.");
+            return;
+        }
+
+        if (email === "") {
+            alert("Please enter your email.");
+            return;
+        }
+
+        if (message === "") {
+            alert("Please describe your website project.");
+            return;
+        }
+
+        alert("Thank you! Your message has been received.");
+
+        contactForm.reset();
+    });
+}
