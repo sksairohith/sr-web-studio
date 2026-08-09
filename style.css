@@ -1020,3 +1020,13 @@ body.dark-mode .stat-card h3,
 body.dark-mode .stat-card p {
     color: #ffffff;
 }
+/* WHY CHOOSE CARDS ANIMATION */
+
+.why-choose-card {
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.why-choose-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
