@@ -997,3 +997,26 @@ button {
         border-color 0.4s ease,
         box-shadow 0.4s ease;
 }
+/* FIX DARK MODE CARDS */
+
+body.dark-mode .card,
+body.dark-mode .service-card,
+body.dark-mode .portfolio-card,
+body.dark-mode .price-card,
+body.dark-mode .stat-card {
+    background: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card h3,
+body.dark-mode .card p,
+body.dark-mode .service-card h3,
+body.dark-mode .service-card p,
+body.dark-mode .portfolio-card h3,
+body.dark-mode .portfolio-card p,
+body.dark-mode .price-card h3,
+body.dark-mode .price-card p,
+body.dark-mode .stat-card h3,
+body.dark-mode .stat-card p {
+    color: #ffffff;
+}
