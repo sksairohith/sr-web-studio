@@ -1114,3 +1114,26 @@ body::before {
         transform: translate(100vw, 30vh);
     }
 }
+/* PROFESSIONAL NAVIGATION ANIMATION */
+
+nav a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -6px;
+    width: 0;
+    height: 3px;
+    background: #1e90ff;
+    border-radius: 5px;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 70%;
+}
