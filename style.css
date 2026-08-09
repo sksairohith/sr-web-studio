@@ -1060,3 +1060,31 @@ body {
         background-position: 0% 50%;
     }
 }
+/* DARK MODE ANIMATED BACKGROUND */
+
+body.dark-mode {
+    background: linear-gradient(
+        120deg,
+        #0b0b0b,
+        #111827,
+        #0b0b0b,
+        #172033
+    );
+
+    background-size: 300% 300%;
+    animation: darkBackgroundMove 15s ease infinite;
+}
+
+@keyframes darkBackgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
