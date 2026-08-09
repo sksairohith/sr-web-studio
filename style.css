@@ -919,3 +919,13 @@ body.dark-mode #darkModeBtn:hover {
         transform: translateY(0);
     }
 }
+/* PROFESSIONAL SERVICE CARD ANIMATION */
+
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
