@@ -1030,3 +1030,33 @@ body.dark-mode .stat-card p {
     transform: translateY(-8px);
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
+/* ============================= */
+/* ANIMATED WEBSITE BACKGROUND */
+/* ============================= */
+
+body {
+    background: linear-gradient(
+        120deg,
+        #f4f6f9,
+        #e8f0ff,
+        #f4f6f9,
+        #eef7ff
+    );
+
+    background-size: 300% 300%;
+    animation: backgroundMove 15s ease infinite;
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
