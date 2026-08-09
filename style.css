@@ -1168,3 +1168,37 @@ nav a:hover::after {
         transform: translateY(0);
     }
 }
+/* WHATSAPP BUTTON ANIMATION */
+
+.whatsapp-btn {
+    animation: whatsappPulse 2.5s ease-in-out infinite;
+}
+
+@keyframes whatsappPulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.08);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.whatsapp-btn:hover {
+    animation: none;
+    transform: scale(1.12);
+}
+/* HERO TITLE HOVER EFFECT */
+
+.hero h1 {
+    transition: transform 0.4s ease, text-shadow 0.4s ease;
+}
+
+.hero h1:hover {
+    transform: translateY(-4px);
+    text-shadow: 0 8px 20px rgba(30, 144, 255, 0.25);
+}
