@@ -867,3 +867,55 @@ body.dark-mode #darkModeBtn:hover {
         font-size: 26px;
     }
 }
+/* ============================= */
+/* PROFESSIONAL HERO ANIMATION */
+/* ============================= */
+
+.hero h1 {
+    animation: heroTitle 1s ease-out;
+}
+
+.hero p {
+    animation: heroText 1.2s ease-out;
+}
+
+.hero button,
+.hero a {
+    animation: heroButton 1.4s ease-out;
+}
+
+@keyframes heroTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroText {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroButton {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
