@@ -1149,3 +1149,22 @@ nav a:hover::after {
     opacity: 1;
     transform: translateY(0);
 }
+/* LOGO FLOATING ANIMATION */
+
+.logo-container img {
+    animation: logoFloat 3s ease-in-out infinite;
+}
+
+@keyframes logoFloat {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
