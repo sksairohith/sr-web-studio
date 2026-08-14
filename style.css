@@ -724,7 +724,7 @@ body.dark-mode #darkModeBtn:hover {
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
-.scroll-reveal.show {
+.scroll-reveal.visible {
     opacity: 1;
     transform: translateY(0);
 }
