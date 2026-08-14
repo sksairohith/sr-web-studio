@@ -1510,3 +1510,70 @@ body.dark-mode a {
 body.dark-mode .whatsapp-btn {
     color: #ffffff;
 }
+/* =========================
+   AI ASSISTANT
+   ========================= */
+
+.ai-assistant {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.ai-face {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0066ff, #8a2be2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: aiFloat 3s ease-in-out infinite;
+}
+
+.ai-message {
+    background: white;
+    color: #111827;
+    padding: 12px 18px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    line-height: 1.5;
+    animation: aiAppear 0.8s ease;
+}
+
+@keyframes aiFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@keyframes aiAppear {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Dark mode */
+body.dark-mode .ai-message {
+    background: #151c2b;
+    color: white;
+    border: 1px solid #263247;
+}
