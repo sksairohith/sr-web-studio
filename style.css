@@ -1384,3 +1384,129 @@ body::after {
     margin-top: 35px;
     font-weight: bold;
 }
+/* ==============================
+   FULL DARK MODE
+   ============================== */
+
+body.dark-mode {
+    background: #0b0f19;
+    color: #f5f7ff;
+}
+
+/* Header */
+body.dark-mode header {
+    background: #111827;
+    color: #ffffff;
+}
+
+/* Navigation */
+body.dark-mode nav a {
+    color: #ffffff;
+}
+
+body.dark-mode nav a:hover {
+    color: #60a5fa;
+}
+
+/* Hero */
+body.dark-mode .hero {
+    background:
+        radial-gradient(circle at 20% 30%,
+        rgba(0, 119, 255, 0.18),
+        transparent 35%),
+        radial-gradient(circle at 80% 70%,
+        rgba(180, 0, 255, 0.15),
+        transparent 35%),
+        #0b0f19;
+    color: #ffffff;
+}
+
+/* All normal sections */
+body.dark-mode section {
+    background-color: #0b0f19;
+    color: #f5f7ff;
+}
+
+/* Cards */
+body.dark-mode .card,
+body.dark-mode .service-card,
+body.dark-mode .portfolio-card,
+body.dark-mode .price-card,
+body.dark-mode .stat-card {
+    background: #151c2b;
+    color: #ffffff;
+    border: 1px solid #263247;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Card text */
+body.dark-mode .card p,
+body.dark-mode .service-card p,
+body.dark-mode .portfolio-card p,
+body.dark-mode .price-card p,
+body.dark-mode .stat-card p {
+    color: #d1d5db;
+}
+
+/* Headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #ffffff;
+}
+
+/* Contact */
+body.dark-mode .contact-section {
+    background: #0b0f19;
+    color: #ffffff;
+}
+
+body.dark-mode .contact-info {
+    color: #ffffff;
+}
+
+/* Forms */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #151c2b;
+    color: #ffffff;
+    border: 1px solid #374151;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #9ca3af;
+}
+
+/* Buttons */
+body.dark-mode button {
+    color: #ffffff;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background: #070b12;
+    color: #ffffff;
+}
+
+body.dark-mode footer p,
+body.dark-mode footer h2,
+body.dark-mode footer h3 {
+    color: #ffffff;
+}
+
+/* Achievement numbers */
+body.dark-mode .counter {
+    color: #60a5fa;
+}
+
+/* Links */
+body.dark-mode a {
+    color: #60a5fa;
+}
+
+/* Keep WhatsApp button visible */
+body.dark-mode .whatsapp-btn {
+    color: #ffffff;
+}
