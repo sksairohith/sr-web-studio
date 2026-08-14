@@ -50,7 +50,9 @@ function revealOnScroll() {
 window.addEventListener("scroll", revealOnScroll);
 
 revealOnScroll();
-// Animated counters when visible
+
+            // Animated counters when visible
+
 const counters = document.querySelectorAll(".counter");
 
 const counterObserver = new IntersectionObserver(function(entries) {
@@ -61,6 +63,7 @@ const counterObserver = new IntersectionObserver(function(entries) {
 
             const counter = entry.target;
             const target = Number(counter.getAttribute("data-target"));
+
             let current = 0;
 
             const updateCounter = function() {
@@ -78,6 +81,11 @@ const counterObserver = new IntersectionObserver(function(entries) {
                     counter.textContent = current;
 
                     setTimeout(updateCounter, 30);
+
+                } else {
+
+                    counter.textContent = target;
+
                 }
             };
 
@@ -85,7 +93,14 @@ const counterObserver = new IntersectionObserver(function(entries) {
 
             counterObserver.unobserve(counter);
         }
+
     });
+
+});
+
+counters.forEach(function(counter) {
+    counterObserver.observe(counter);
+});
 
 });
 
