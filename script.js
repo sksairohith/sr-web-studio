@@ -196,3 +196,28 @@ const revealObserver = new IntersectionObserver(function(entries) {
 revealElements.forEach(function(element) {
     revealObserver.observe(element);
 });
+// AI ASSISTANT VOICE
+
+window.addEventListener("load", function () {
+
+    const aiFace = document.querySelector(".ai-face");
+
+    if (aiFace) {
+
+        aiFace.addEventListener("click", function () {
+
+            const message =
+                "Hi! I am Rohith. Welcome to SR Web Studio!";
+
+            const speech = new SpeechSynthesisUtterance(message);
+
+            speech.rate = 0.9;
+            speech.pitch = 1.1;
+            speech.volume = 1;
+
+            window.speechSynthesis.cancel();
+            window.speechSynthesis.speak(speech);
+        });
+    }
+
+});
