@@ -1754,3 +1754,196 @@ body.dark-mode #darkModeBtn {
     background: transparent;
     color: #ffffff;
 }
+/* =================================
+   PROFESSIONAL AI WELCOME ASSISTANT
+   ================================= */
+
+.ai-welcome {
+    position: fixed;
+    right: 28px;
+    bottom: 90px;
+    z-index: 9998;
+
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    animation: aiWelcomeIn 1s ease forwards;
+}
+
+/* Welcome message */
+
+.ai-welcome-message {
+    background: rgba(255, 255, 255, 0.96);
+    color: #10233f;
+
+    padding: 15px 20px;
+    border-radius: 18px;
+
+    box-shadow:
+        0 12px 35px rgba(0, 0, 0, 0.18),
+        0 0 25px rgba(80, 120, 255, 0.15);
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 230px;
+}
+
+.ai-welcome-message strong {
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.ai-welcome-message span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ai-welcome-message small {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #64748b;
+}
+
+/* AI FACE */
+
+.ai-avatar {
+    position: relative;
+
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+
+    background:
+        radial-gradient(circle at 35% 30%, #4facfe, transparent 35%),
+        linear-gradient(135deg, #162b5c, #7928ca);
+
+    box-shadow:
+        0 0 15px rgba(79, 172, 254, 0.7),
+        0 0 35px rgba(121, 40, 202, 0.5);
+
+    cursor: pointer;
+
+    animation: aiFloat 3s ease-in-out infinite;
+
+    transition: transform 0.3s ease;
+}
+
+.ai-avatar:hover {
+    transform: scale(1.1);
+}
+
+/* Eyes */
+
+.ai-eye {
+    position: absolute;
+
+    width: 9px;
+    height: 14px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    top: 25px;
+
+    box-shadow: 0 0 8px #4facfe;
+}
+
+.left-eye {
+    left: 20px;
+}
+
+.right-eye {
+    right: 20px;
+}
+
+/* Mouth */
+
+.ai-mouth {
+    position: absolute;
+
+    width: 22px;
+    height: 9px;
+
+    border-bottom: 3px solid white;
+    border-radius: 50%;
+
+    left: 21px;
+    top: 43px;
+}
+
+/* Floating animation */
+
+@keyframes aiFloat {
+
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-7px);
+    }
+
+}
+
+/* Entrance animation */
+
+@keyframes aiWelcomeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+
+}
+
+/* Dark mode */
+
+body.dark-mode .ai-welcome-message {
+    background: #151c2b;
+    color: #ffffff;
+
+    border: 1px solid #263247;
+}
+
+body.dark-mode .ai-welcome-message small {
+    color: #aeb9ca;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .ai-welcome {
+        right: 15px;
+        bottom: 80px;
+    }
+
+    .ai-welcome-message {
+        min-width: 190px;
+        padding: 12px 15px;
+    }
+
+    .ai-avatar {
+        width: 58px;
+        height: 58px;
+    }
+
+    .ai-eye {
+        top: 20px;
+    }
+
+    .ai-mouth {
+        top: 36px;
+    }
+
+}
