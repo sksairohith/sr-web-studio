@@ -1577,3 +1577,180 @@ body.dark-mode .ai-message {
     color: white;
     border: 1px solid #263247;
 }
+/* =================================
+   FULL WEBSITE DARK MODE
+   ================================= */
+
+body.dark-mode {
+    background: #080b12 !important;
+    color: #f5f7ff !important;
+}
+
+/* All sections */
+body.dark-mode section,
+body.dark-mode .hero,
+body.dark-mode .stats-section,
+body.dark-mode .portfolio,
+body.dark-mode .pricing,
+body.dark-mode .contact-section {
+    background: #080b12 !important;
+    color: #f5f7ff !important;
+}
+
+/* Header */
+body.dark-mode header {
+    background: #111827 !important;
+    color: #ffffff !important;
+}
+
+/* Navigation */
+body.dark-mode nav a {
+    color: #ffffff !important;
+}
+
+body.dark-mode nav a:hover {
+    color: #60a5fa !important;
+}
+
+/* Headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #ffffff !important;
+}
+
+/* Paragraphs */
+body.dark-mode p {
+    color: #d1d5db !important;
+}
+
+/* ALL CARDS */
+body.dark-mode .card,
+body.dark-mode .service-card,
+body.dark-mode .portfolio-card,
+body.dark-mode .price-card,
+body.dark-mode .stat-card,
+body.dark-mode .review-card,
+body.dark-mode .testimonial-card,
+body.dark-mode .faq-card {
+    background: #151c2b !important;
+    color: #ffffff !important;
+    border: 1px solid #263247 !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* Card paragraphs */
+body.dark-mode .card p,
+body.dark-mode .service-card p,
+body.dark-mode .portfolio-card p,
+body.dark-mode .price-card p,
+body.dark-mode .stat-card p {
+    color: #d1d5db !important;
+}
+
+/* Pricing */
+body.dark-mode .pricing-container {
+    background: transparent !important;
+}
+
+body.dark-mode .price-card h1,
+body.dark-mode .price-card h2,
+body.dark-mode .price-card h3 {
+    color: #ffffff !important;
+}
+
+/* Portfolio */
+body.dark-mode .portfolio-container {
+    background: transparent !important;
+}
+
+/* Contact */
+body.dark-mode .contact-section,
+body.dark-mode .contact-container,
+body.dark-mode .contact-info,
+body.dark-mode .contact-form {
+    color: #ffffff !important;
+}
+
+/* Inputs */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+    background: #111827 !important;
+    color: #ffffff !important;
+    border: 1px solid #374151 !important;
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+    color: #9ca3af !important;
+}
+
+/* Select options */
+body.dark-mode option {
+    background: #111827;
+    color: #ffffff;
+}
+
+/* Buttons */
+body.dark-mode button {
+    color: #ffffff;
+}
+
+/* Links */
+body.dark-mode a {
+    color: #60a5fa;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background: #05070c !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode footer p,
+body.dark-mode footer h2,
+body.dark-mode footer h3,
+body.dark-mode footer a {
+    color: #ffffff !important;
+}
+
+/* Hero */
+body.dark-mode .hero {
+    background:
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(0, 102, 255, 0.18),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 70%,
+            rgba(138, 43, 226, 0.18),
+            transparent 35%
+        ),
+        #080b12 !important;
+}
+
+/* Hero buttons */
+body.dark-mode .hero-buttons button {
+    color: #ffffff !important;
+}
+
+/* Achievement numbers */
+body.dark-mode .counter {
+    color: #60a5fa !important;
+}
+
+/* AI message */
+body.dark-mode .ai-message {
+    background: #151c2b !important;
+    color: #ffffff !important;
+    border: 1px solid #263247 !important;
+}
+
+/* Dark mode button */
+body.dark-mode #darkModeBtn {
+    background: transparent;
+    color: #ffffff;
+}
